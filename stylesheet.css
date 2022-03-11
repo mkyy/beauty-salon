@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADER CONFIGS START */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    height: 100px;
+}
+
+.logo-container {
+    position: fixed;
+    left: 0px;
+    top:0px;
+}
+
+.logo-container img {
+    width: 150px;
+    height: 100px;
+}
+
+.header-container nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0000008c;
+    margin: 20px;
+    background-color: #E7ED9B;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.header-container nav a:hover {
+    color: black;
+}
+
+
+/* HEADER CONFIGS END */
+
+
+/* MAIN CONFIG START*/
+
+/* INITIAL LAYOUT PAGE STYLE START */
+.initial-layout{
+    display: flex;
+    background-image: url('/assets/recepcao.jpg');
+    background-size: cover;
+    height: 55vh;
+    align-items: center;
+    justify-content: flex-end;
+}
+.initial-textbox{
+    text-align: center;
+    background-color: rgba(231, 237, 155, 0.7);
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+}
+/* INITIAL LAYOUT PAGE STYLE END */
+
+
+.container-layout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin:20px 0px;
+}
+
+.container-layout h1 {text-align: center;text-transform: uppercase;}
+.container-layout p {text-align: center;font-weight: bold;}
+.service-container{
+    display: flex;
+    height: 90vh;
+    margin: 10px auto;
+}
+
+.service-container .service-one img{
+    height: 80%;
+    width: 40vw;
+}
+.service-container .service-two{
+    width: 40vw;
+}
+.service-container li{
+    list-style: none;
+    margin: 20px 0px;
+}
+.service-container li::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('/assets/yellow-v-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+
+.container-galery{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.container-galery img{
+    width: 30%;
+    height: 400px;
+    margin: 0px auto;
+}
+
+.container-galery img:hover{
+    -webkit-filter: blur(2px);
+	filter: blur(2px);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.wp-button{
+    width: fit-content;
+    align-self: center;
+    margin-top: 30px;
+}
+.map{
+    align-self: center;
+}
+/* MAIN CONFIG END*/
+
+/*FOOTER CONFIG START */
+/* .logo-foot REF TO LOGO IMAGE ON FOOTER */
+.container-footer .logo-foot{
+max-width: 120px;
+}
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8BDB81;
+}
+/* ADICIONANDO OS ICONES NO FOOTER DA PAGINA PASSANDO OS ICONES COMO PARAMETRO NO BACKGROUND-IMAGE */
+.container-footer-text p:first-child:before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('/assets/icones/endereco.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+.container-footer-text p:nth-child(2)::before{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url('/assets/icones/telefone.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
+/*FOOTER CONFIG END */

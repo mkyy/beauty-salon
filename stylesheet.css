@@ -59,7 +59,7 @@ body {
 /* INITIAL LAYOUT PAGE STYLE START */
 .initial-layout{
     display: flex;
-    background-image: url('/assets/recepcao.jpg');
+    background-image: url('./assets/recepcao.jpg');
     background-size: cover;
     height: 55vh;
     align-items: center;
